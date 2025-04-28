@@ -1,46 +1,83 @@
-# frontend
+# Blog Platform Frontend
 
-This template should help get you started developing with Vue 3 in Vite.
+A modern blog platform built with Vue 3, TypeScript, and Vite. This frontend application provides a user-friendly interface for creating, reading, and managing blog posts.
 
-## Recommended IDE Setup
+## Features
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+- User authentication (sign up, sign in, sign out)
+- Create, read, update, and delete blog posts
+- Real-time notifications for new posts
+- Responsive design
+- Modern UI with smooth transitions
 
-## Type Support for `.vue` Imports in TS
+## Tech Stack
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+- Vue 3 with Composition API
+- TypeScript
+- Vite
+- Pinia for state management
+- Vue Router
+- Supabase for real-time features
+- Apollo Client for GraphQL
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+## Prerequisites
 
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+- Node.js (v16 or higher)
+- npm or yarn
+- Supabase account and project
 
-## Customize configuration
+## Environment Variables
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+Create a `.env` file in the root directory with the following variables:
+
+```env
+VITE_SUPABASE_URL=your_supabase_url
+VITE_SUPABASE_KEY=your_supabase_key
+VITE_GRAPHQL_URL=your_graphql_endpoint
+```
 
 ## Project Setup
 
 ```sh
+# Install dependencies
 npm install
-```
 
-### Compile and Hot-Reload for Development
-
-```sh
+# Start development server
 npm run dev
-```
 
-### Type-Check, Compile and Minify for Production
-
-```sh
+# Build for production
 npm run build
-```
 
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
+# Lint code
 npm run lint
 ```
+
+## Development
+
+The development server will start at `http://localhost:5173` by default.
+
+### Recommended IDE Setup
+
+- [VSCode](https://code.visualstudio.com/)
+- [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+- [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin)
+
+### Type Support
+
+For TypeScript support in `.vue` files, we use `vue-tsc` for type checking. Make sure to have the TypeScript Vue Plugin (Volar) installed in your IDE.
+
+## Project Structure
+
+```
+src/
+├── components/     # Vue components
+├── stores/        # Pinia stores
+├── views/         # Page components
+├── router/        # Vue Router configuration
+├── lib/           # Utility functions and configurations
+└── graphql/       # GraphQL queries and mutations
+```
+
+## License
+
+MIT
