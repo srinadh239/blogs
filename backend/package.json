@@ -22,13 +22,22 @@
   "dependencies": {
     "@nestjs/apollo": "^10.2.0",
     "@nestjs/common": "^9.0.0",
+    "@nestjs/config": "^4.0.2",
     "@nestjs/core": "^9.0.0",
     "@nestjs/graphql": "^10.2.0",
     "@nestjs/platform-express": "^9.0.0",
+    "@nestjs/typeorm": "^11.0.0",
+    "@supabase/supabase-js": "^2.49.4",
+    "@types/bcrypt": "^5.0.2",
+    "@types/jsonwebtoken": "^9.0.9",
     "apollo-server-express": "^3.11.1",
+    "bcrypt": "^5.1.1",
     "graphql": "^16.6.0",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.15.1",
     "reflect-metadata": "^0.1.13",
-    "rxjs": "^7.2.0"
+    "rxjs": "^7.2.0",
+    "typeorm": "^0.3.22"
   },
   "devDependencies": {
     "@nestjs/cli": "^9.0.0",
